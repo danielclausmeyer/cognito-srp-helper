@@ -42,7 +42,7 @@
     "format:prettier": "prettier -c .prettierrc.cjs --write src/**",
     "lint": "npm run lint:ts && npm run lint:eslint",
     "lint:eslint": "eslint -c .eslintrc.cjs src/**",
-    "lint:ts": "tsc --noEmit -p .tsconfig.json",
+    "lint:ts": "tsc --noEmit",
     "test": "jest -c .jestrc.cjs",
     "test:clear": "jest --clear-cache",
     "test:integration": "jest -c .jestrc.cjs src/__tests__/integration",
