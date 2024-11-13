@@ -1,10 +1,10 @@
 import { Buffer } from "buffer/";
 
-import { createDeviceVerifier } from "../../cognito-srp-helper";
-import * as utils from "../../utils";
-import { deviceRandomPasswordBytes, deviceSaltBytes } from "../mocks/data";
-import { mockDeviceVerifierFactory, mockInitiateAuthResponseWithNewDeviceFactory } from "../mocks/factories";
-import { positiveInitiateAuthResponseWithNewDevice as positiveResponses } from "../test-cases";
+import { createDeviceVerifier } from "../../cognito-srp-helper.js";
+import * as utils from "../../utils.js";
+import { deviceRandomPasswordBytes, deviceSaltBytes } from "../mocks/data.js";
+import { mockDeviceVerifierFactory, mockInitiateAuthResponseWithNewDeviceFactory } from "../mocks/factories.js";
+import { positiveInitiateAuthResponseWithNewDevice as positiveResponses } from "../test-cases/index.js";
 
 describe("createDeviceVerifier", () => {
   describe("positive", () => {

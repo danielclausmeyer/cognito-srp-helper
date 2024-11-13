@@ -1,15 +1,15 @@
-import { wrapInitiateAuth } from "../../cognito-srp-helper";
-import { InitiateAuthRequest } from "../../types";
+import { wrapInitiateAuth } from "../../cognito-srp-helper.js";
+import { InitiateAuthRequest } from "../../types.js";
 import {
   mockAdminInitiateAuthRequestFactory,
   mockInitiateAuthRequestFactory,
   mockSrpSessionFactory,
-} from "../mocks/factories";
+} from "../mocks/factories.js";
 import {
   positiveAdminInitiateAuthRequests as positiveAdminRequests,
   positiveInitiateAuthRequests as positiveRequests,
   positiveSrpSessions as positiveSessions,
-} from "../test-cases";
+} from "../test-cases/index.js";
 
 describe("wrapInitiateAuth", () => {
   describe("positive", () => {

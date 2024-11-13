@@ -2,7 +2,7 @@ import { Buffer } from "buffer/"; // use the browser compatible buffer library
 import CryptoJS from "crypto-js";
 import { BigInteger } from "jsbn";
 
-import { G, INFO_BITS, K, N } from "./constants";
+import { G, INFO_BITS, K, N } from "./constants.js";
 import {
   AbortOnZeroASrpError,
   AbortOnZeroBSrpError,
@@ -13,7 +13,7 @@ import {
   MissingSaltError,
   MissingSecretError,
   MissingUserIdForSrpBError,
-} from "./errors";
+} from "./errors.js";
 import {
   DeviceVerifier,
   InitiateAuthRequest,
@@ -22,8 +22,8 @@ import {
   RespondToAuthChallengeResponse,
   SrpSession,
   SrpSessionSigned,
-} from "./types";
-import { getBytesFromHex, hash, hexHash, padHex, randomBytes } from "./utils";
+} from "./types.js";
+import { getBytesFromHex, hash, hexHash, padHex, randomBytes } from "./utils.js";
 
 const generateSmallA = (): BigInteger => {
   // This will be interpreted as a postive 128-bit integer

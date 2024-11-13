@@ -1,2 +1,2 @@
-export * as data from "./data";
-export * as factories from "./factories";
+export * as data from "./data.js";
+export * as factories from "./factories.js";

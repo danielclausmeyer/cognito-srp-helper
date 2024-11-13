@@ -7,7 +7,7 @@ import {
   RespondToAuthChallengeResponse,
   SrpSession,
   SrpSessionSigned,
-} from "../../types";
+} from "../../types.js";
 
 import {
   mockAdminInitiateAuthRequest,
@@ -23,7 +23,7 @@ import {
   mockSession,
   mockSessionSigned,
   mockSessionSignedWithDevice,
-} from "./data";
+} from "./data.js";
 
 export const mockCredentialsFactory = (credentials?: Partial<Credentials>): Credentials =>
   structuredClone({

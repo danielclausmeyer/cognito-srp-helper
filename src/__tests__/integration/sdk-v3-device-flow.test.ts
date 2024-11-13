@@ -27,9 +27,9 @@ import {
   signSrpSessionWithDevice,
   wrapAuthChallenge,
   wrapInitiateAuth,
-} from "../../cognito-srp-helper";
+} from "../../cognito-srp-helper.js";
 
-import { signupV3 } from "./helpers";
+import { signupV3 } from "./helpers.js";
 
 // Load in env variables from .env if it / they exist..
 

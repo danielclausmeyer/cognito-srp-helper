@@ -2,8 +2,8 @@ import { faker } from "@faker-js/faker";
 import omit from "lodash.omit";
 import RandExp from "randexp";
 
-import { RespondToAuthChallengeResponse } from "../../types";
-import { mockRespondToAuthChallengeResponseFactory } from "../mocks/factories";
+import { RespondToAuthChallengeResponse } from "../../types.js";
+import { mockRespondToAuthChallengeResponseFactory } from "../mocks/factories.js";
 
 const { ChallengeParameters } = mockRespondToAuthChallengeResponseFactory();
 

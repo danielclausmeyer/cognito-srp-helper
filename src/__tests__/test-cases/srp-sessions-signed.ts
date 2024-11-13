@@ -1,8 +1,8 @@
 import { faker } from "@faker-js/faker";
 import RandExp from "randexp";
 
-import { SrpSessionSigned } from "../../types";
-import { mockSrpSessionSignedFactory } from "../mocks/factories";
+import { SrpSessionSigned } from "../../types.js";
+import { mockSrpSessionSignedFactory } from "../mocks/factories.js";
 
 export const positiveSrpSessionsSigned: Record<string, SrpSessionSigned> = {
   default: mockSrpSessionSignedFactory(),

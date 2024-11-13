@@ -1,4 +1,4 @@
-import { signSrpSessionWithDevice } from "../../cognito-srp-helper";
+import { signSrpSessionWithDevice } from "../../cognito-srp-helper.js";
 import {
   AbortOnZeroBSrpError,
   AbortOnZeroSrpError,
@@ -9,20 +9,20 @@ import {
   MissingSaltError,
   MissingSecretError,
   SignSrpSessionError,
-} from "../../errors";
-import * as utils from "../../utils";
+} from "../../errors.js";
+import * as utils from "../../utils.js";
 import {
   mockDeviceVerifierFactory,
   mockInitiateAuthResponseWithNewDeviceFactory,
   mockRespondToAuthChallengeResponseFactory,
   mockSrpSessionFactory,
   mockSrpSessionSignedWithDeviceFactory,
-} from "../mocks/factories";
+} from "../mocks/factories.js";
 import {
   negativeRespondToAuthChallengeResponses as negativeResponses,
   positiveRespondToAuthChallengeResponses as positiveResponses,
   positiveSrpSessionsSigned as positiveSessions,
-} from "../test-cases";
+} from "../test-cases/index.js";
 
 const { ChallengeParameters } = mockRespondToAuthChallengeResponseFactory();
 

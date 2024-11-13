@@ -2,8 +2,8 @@ import { faker } from "@faker-js/faker";
 import omit from "lodash.omit";
 import RandExp from "randexp";
 
-import { InitiateAuthResponse } from "../../types";
-import { mockInitiateAuthResponseWithNewDeviceFactory } from "../mocks/factories";
+import { InitiateAuthResponse } from "../../types.js";
+import { mockInitiateAuthResponseWithNewDeviceFactory } from "../mocks/factories.js";
 
 const { ChallengeParameters, AuthenticationResult } = mockInitiateAuthResponseWithNewDeviceFactory();
 const { NewDeviceMetadata } = AuthenticationResult ?? {};

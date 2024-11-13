@@ -1,7 +1,7 @@
 import { CognitoIdentityProviderClient, SignUpCommand } from "@aws-sdk/client-cognito-identity-provider";
 import { CognitoIdentityServiceProvider } from "aws-sdk";
 
-import { createSecretHash } from "../../cognito-srp-helper";
+import { createSecretHash } from "../../cognito-srp-helper.js";
 
 type SignupOptionsV2 = {
   username: string;

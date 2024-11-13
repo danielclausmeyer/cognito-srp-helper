@@ -1,4 +1,4 @@
-import { signSrpSession } from "../../cognito-srp-helper";
+import { signSrpSession } from "../../cognito-srp-helper.js";
 import {
   AbortOnZeroBSrpError,
   AbortOnZeroSrpError,
@@ -8,18 +8,18 @@ import {
   MissingSaltError,
   MissingSecretError,
   SignSrpSessionError,
-} from "../../errors";
-import * as utils from "../../utils";
+} from "../../errors.js";
+import * as utils from "../../utils.js";
 import {
   mockInitiateAuthResponseFactory,
   mockSrpSessionFactory,
   mockSrpSessionSignedFactory,
-} from "../mocks/factories";
+} from "../mocks/factories.js";
 import {
   negativeInitiateAuthResponses as negativeResponses,
   positiveInitiateAuthResponses as positiveResponses,
   positiveSrpSessionsSigned as positiveSessions,
-} from "../test-cases";
+} from "../test-cases/index.js";
 
 const { ChallengeParameters } = mockInitiateAuthResponseFactory();
 
